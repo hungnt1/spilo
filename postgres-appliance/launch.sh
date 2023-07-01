@@ -38,7 +38,7 @@ for i in $(seq 0 7); do
         touch "${PGLOG}/postgresql-$i.csv"
     fi
 done
-chown -R postgres: "$PGROOT" "$RW_DIR/certs"
+chown -R postgres: "$PGROOT" "$RW_DIR"
 chmod -R go-w "$PGROOT"
 chmod 01777 "$RW_DIR/tmp"
 chmod 0700 "$PGDATA"
